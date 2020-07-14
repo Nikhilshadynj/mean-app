@@ -1,0 +1,18 @@
+<div fxLayoutAlign = "center center" fxFlexFill>
+    <mat-card fxFlex="25">
+   <mat-toolbar>Register</mat-toolbar>     
+<form fxLayoutAlign = "stretch" fxLayout="column">
+    <mat-form-field>
+      <input matInput [(ngModel)]="user.name" placeholder="Username" name="name">
+    </mat-form-field>
+  
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.password" type="password" placeholder="Password" name="password">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="user.email" type="email" placeholder="email" name="email">
+      </mat-form-field>
+      <button mat-raised-button type="submit" (click)="signUp()"> Signup </button>
+  </form>
+    </mat-card>
+</div>
